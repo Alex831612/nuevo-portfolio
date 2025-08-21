@@ -38,3 +38,23 @@ body {
 *:focus-visible {
     @apply ring-2 ring-blue-500 ring-offset-2 ring-offset-white dark:ring-offset-gray-900;
 }
+
+.hero-dots::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.2;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-repeat: repeat;
+  background-position: 0 0;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  pointer-events: none; /* Para que no interfiera con los clicks */
+  z-index: 1; /* Para que esté debajo del contenido */
+}
+
+.hero-dots > * {
+  position: relative;
+  z-index: 2;
+}

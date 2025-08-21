@@ -27,7 +27,7 @@ export const skills = [
   { 
     name: 'Herramientas', 
     icon: WrenchIcon,
-    technologies: 'Git, GitHub, Vercel, Netlify, VSCode, Claude AI, NPM, Yarn',
+    technologies: 'Git, GitHub, Vercel, Netlify, VSCode, Claude AI, NPM',
   },
   {
     name: 'Bases de Datos',
@@ -42,7 +42,7 @@ export const skills = [
   {
     name: 'Mobile Development',
     icon: SmartphoneIcon,
-    technologies: 'React Native (básico), PWA, Mobile-First Design, Capacitor',
+    technologies: 'React Native (básico), PWA, Mobile-First Design',
   }
 ];
 
@@ -52,7 +52,7 @@ export const projects = [
     title: "BloGame",
     subtitle: "Blog moderno sobre videojuegos",
     description: "Un blog moderno y minimalista sobre videojuegos, construido con Next.js 15 y Tailwind CSS. Cuenta con un sistema de gestión de contenido basado en archivos Markdown, SEO optimizado y despliegue automático en Vercel.",
-    fullDescription: "BloGame es una plataforma completa para amantes de los videojuegos que combina contenido de calidad con una experiencia de usuario excepcional. Implementé un sistema de gestión de contenido headless usando Markdown, optimización SEO avanzada y un diseño completamente responsivo.",
+    fullDescription: "Un blog moderno y minimalista sobre videojuegos, construido con Next.js 15 y Tailwind CSS. Cuenta con un sistema de gestión de contenido basado en archivos Markdown, SEO optimizado y despliegue automático en Vercel.",
     tech: ["Next.js 15", "Tailwind CSS", "TypeScript", "Markdown", "Vercel", "SEO"],
     image: "/assets/images/blogame.webp",
     link: "https://bloggame.vercel.app/",
@@ -62,10 +62,10 @@ export const projects = [
     year: "2025",
     category: "Web Development",
     highlights: [
-      "Sistema CMS con Markdown",
+      "Markdown para contenido",
       "SEO optimizado",
       "Diseño responsive",
-      "Performance 95+ en Lighthouse"
+      "Accesibilidad"
     ]
   },
   {
@@ -73,11 +73,11 @@ export const projects = [
     title: "Portfolio Personal",
     subtitle: "Portafolio interactivo con animaciones",
     description: "Mi portafolio personal, diseñado para mostrar mis proyectos y habilidades de manera atractiva. Utiliza React, Tailwind CSS y Framer Motion para crear animaciones fluidas y una experiencia de usuario excepcional.",
-    fullDescription: "Este portafolio representa la culminación de mis habilidades en frontend development. Implementé animaciones complejas, un sistema de temas, navegación fluida y optimizaciones de performance para crear una experiencia memorable.",
+    fullDescription: "Mi portafolio personal, diseñado para mostrar mis proyectos y habilidades de manera atractiva. Utiliza React, Tailwind CSS y Framer Motion para crear animaciones fluidas y una experiencia de usuario excepcional.",
     tech: ["React", "Vite", "Tailwind CSS", "Framer Motion", "GitHub Pages"],
     image: "/assets/images/portfolio.webp",
     link: "https://alexandres.vercel.app/",
-    github: "https://github.com/Alex831612/portfolio",
+    github: "https://github.com/Alex831612/nuevo-portfolio",
     status: "completed", 
     featured: true,
     year: "2025",
@@ -86,7 +86,7 @@ export const projects = [
       "Animaciones con Framer Motion",
       "Modo oscuro/claro",
       "Diseño responsivo completo",
-      "Performance optimizada"
+      "Accesibilidad"
     ]
   },
   {
@@ -135,9 +135,9 @@ export const projects = [
     id: 'casa-movil-sur',
     title: "Casa Móvil Sur",
     subtitle: "Sitio web empresarial con WordPress",
-    description: "Página web profesional para una empresa de venta de casas móviles, con diseño minimalista y optimizada para conversiones. Desarrollada con WordPress y optimizada para SEO.",
-    fullDescription: "Sitio web corporativo completo para Casa Móvil Sur, una empresa especializada en la venta de casas móviles. El proyecto incluyó diseño personalizado, optimización SEO, integración con formularios de contacto y optimización para conversiones.",
-    tech: ["WordPress", "PHP", "CSS3", "SEO", "Google Analytics"],
+    description: "Página web profesional para una empresa de venta de casas móviles, con diseño minimalista y optimizada. Desarrollada con WordPress.",
+    fullDescription: "Página web profesional para una empresa de venta de casas móviles, con diseño minimalista y optimizada. Desarrollada con WordPress y optimizada para SEO.",
+    tech: ["WordPress", "PHP", "CSS3"],
     image: "/assets/images/casamovilsur.webp",
     link: "https://casamovilsur.com/feria-de-mobilhomes-en-madrid-valdemoro/",
     github: null,
@@ -147,9 +147,7 @@ export const projects = [
     category: "WordPress",
     highlights: [
       "Diseño personalizado",
-      "SEO optimizado",
-      "Formularios de contacto",
-      "Optimización conversiones"
+      "Diseño responsivo completo",
     ]
   }  
 ];

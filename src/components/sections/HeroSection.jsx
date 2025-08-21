@@ -8,22 +8,13 @@ const HeroSection = ({ scrollToSection }) => {
   return (
     <section 
       id="hero" 
-      className="min-h-screen relative overflow-hidden flex items-center justify-center"
+      className="min-h-screen relative overflow-hidden flex items-center justify-center bg-gradient-to-br from-sky-50 via-sky-100 to-sky-200 dark:from-black dark:via-gray-900 dark:to-blue-950"
       aria-label="Sección principal - Presentación"
+      style={{
+        backgroundImage: `radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px)`,
+        backgroundSize: '50px 50px'
+      }}
     >
-      <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-sky-50 via-sky-100 to-sky-200 dark:from-black dark:via-gray-900 dark:to-blue-950" />
-      </div>
-
-      <div className="absolute inset-0 opacity-20">
-        <div 
-          className="w-full h-full"
-          style={{
-            backgroundImage: `radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-            backgroundSize: '50px 50px'
-          }}
-        />
-      </div>
 
       {/* Contenido principal */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center z-10 pt-16 sm:pt-20">
@@ -40,7 +31,7 @@ const HeroSection = ({ scrollToSection }) => {
             <div className="relative inline-block">
               {personalInfo?.image ? (
                 <motion.div
-                  whileHover={{ scale: 1.02 }} // 
+                  whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.2 }}
                   className="relative group"
                 >
@@ -52,6 +43,8 @@ const HeroSection = ({ scrollToSection }) => {
                     fetchpriority="high"
                     width="160"
                     height="160"
+                    // Añadir para prevenir layout shift de la imagen
+                    style={{ aspectRatio: '1 / 1' }}
                   />
                   <div className="absolute inset-0 rounded-full border-2 border-dashed border-sky-400/40 scale-110" />
                 </motion.div>
